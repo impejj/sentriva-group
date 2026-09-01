@@ -6,7 +6,7 @@
 
 - `main`: baseline original recibida el 2026-09-01.
 - `feat/sentriva-v1-evolution`: evolución V1 en curso.
-- Working product: institutional site + Research Intake + Supplier Registration + RFQ + first real research vertical.
+- Working product: institutional site + Research Intake + Supplier Registration + RFQ + first real research vertical + editorial Insights.
 
 ## V1 routes
 
@@ -15,6 +15,8 @@
 - `/suppliers.html` — Supplier Registration.
 - `/rfq.html` — structured Request for Quotation.
 - `/utility-poles.html` — first real vertical: Infrastructure / Utility Poles.
+- `/insights.html` — editorial hub.
+- `/insight-rfq-tecnico.html` — first published practical insight: technical RFQ structure.
 
 ## Posicionamiento
 
@@ -39,6 +41,10 @@ Dirección: engineering + intelligence + data + global sourcing + premium consul
 
 `Infrastructure / Utility Poles` demuestra la metodología mediante un marco de comparación de materiales, variables técnicas, normas, supply, condiciones comerciales y logística. Es un caso de la metodología, no el límite de SENTRIVA.
 
+## Insights
+
+La sección editorial arranca con pocas piezas útiles, no con contenido genérico de relleno. El primer artículo explica cómo estructurar un RFQ técnico para obtener ofertas comparables y se conecta con el prototipo RFQ del sitio.
+
 ## Evolución prevista
 
 V1 Institutional Website  
@@ -53,5 +59,5 @@ V6 Data & Intelligence Platform
 1. Founder visual/credibility review de Golden Home.
 2. Backend API + almacenamiento durable para Research/Supplier/RFQ.
 3. Proyección de datos reales del research Utility Poles.
-4. Primeras 3–5 piezas de Insights realmente útiles.
+4. Completar 2–4 Insights adicionales sólo con contenido útil y verificable.
 5. ES/EN + SEO/analytics de producción.
