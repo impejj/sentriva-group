@@ -4,46 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Formulario RFQ de Sentriva Group para proveedores y fabricantes." />
-  <meta name="theme-color" content="#0d1820" />
+  <meta name="theme-color" content="#0b141a" />
   <title>Request for Quotation — Sentriva Group</title>
   <link rel="stylesheet" href="styles-v050.css" />
+  <link rel="stylesheet" href="golden-v1.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Ir al contenido</a>
-  <header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html" aria-label="Sentriva Group"><span class="brand-main">SENTRIVA</span><span class="brand-group">GROUP</span></a><button class="nav-toggle" aria-label="Abrir navegación" aria-expanded="false"><span></span><span></span></button><nav class="nav" aria-label="Principal"><a href="index.html#what">Qué hacemos</a><a href="index.html#industries">Sectores</a><a href="index.html#method">Metodología</a><a href="suppliers.html">Proveedores</a><a class="nav-cta" href="research.html">Iniciar research</a></nav></div></header>
-
+  <header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html" aria-label="Sentriva Group"><span class="brand-main">SENTRIVA</span><span class="brand-group">GROUP</span></a><button class="nav-toggle" aria-label="Abrir navegación" aria-expanded="false"><span></span><span></span></button><nav class="nav" aria-label="Principal"><a href="index.html#what">Qué hacemos</a><a href="utility-poles.html">Primer research</a><a href="index.html#method">Metodología</a><a href="suppliers.html">Proveedores</a><a class="nav-cta" href="research.html">Iniciar research</a></nav></div></header>
   <main id="main">
-    <section class="page-hero shell">
-      <span class="eyebrow">REQUEST FOR QUOTATION</span>
-      <h1>Una cotización técnica comparable necesita más que un precio.</h1>
-      <p>Esta interfaz organiza producto, especificación, cantidad, logística, plazo, impuestos y documentación para que distintas ofertas puedan analizarse sobre una base común.</p>
-      <div class="page-proof"><span>Technical fit</span><span>Commercial terms</span><span>Lead time</span><span>Logistics</span></div>
-    </section>
-
-    <section class="section shell">
-      <div class="section-heading"><span class="eyebrow">SUPPLIER RFQ</span><h2>Complete la oferta sobre una estructura comparable.</h2></div>
-      <form class="data-form" data-prototype-form data-note="rfqNote">
-        <fieldset><legend>01 · Producto</legend>
-          <label>Producto<input name="product" required /></label><label>Aplicación<input name="application" /></label><label class="wide">Descripción<textarea name="description" rows="4"></textarea></label><label>Norma<input name="standard" /></label><label>Medidas / modelo<input name="dimensions" /></label><label>Cantidad<input name="quantity" required /></label><label>Unidad<input name="unit" required /></label>
-        </fieldset>
-        <fieldset><legend>02 · Entrega</legend>
-          <label class="wide">Lugar de entrega<input name="delivery_location" required /></label><label>Plazo requerido<input name="required_date" /></label><label>Tiempo de fabricación<input name="production_time" /></label><label>Stock disponible<input name="stock" /></label><label>Transporte<input name="transport" /></label>
-        </fieldset>
-        <fieldset><legend>03 · Oferta comercial</legend>
-          <label>Precio unitario<input name="unit_price" required /></label><label>Moneda<input name="currency" required /></label><label>Impuestos<input name="taxes" /></label><label>Condición de pago<input name="payment_terms" /></label><label>Validez de oferta<input name="validity" /></label><label>Incoterm / condición logística<input name="incoterm" /></label>
-        </fieldset>
-        <fieldset><legend>04 · Evidencia técnica</legend>
-          <label class="wide">Comentarios / excepciones<textarea name="comments" rows="4"></textarea></label>
-          <label class="wide">Documentación técnica<input type="file" name="documents" multiple accept=".pdf,.xlsx,.xls,.doc,.docx,.png,.jpg,.jpeg" /></label>
-          <p class="form-note wide">La carga persistente y el versionado del RFQ se habilitarán en la evolución V3. La pantalla ya fija las variables que deberán integrarse por API.</p>
-        </fieldset>
-        <div class="form-actions"><button class="button button-primary" type="submit">Preparar respuesta RFQ</button><a class="button button-ghost" href="suppliers.html">Registrar proveedor</a></div>
-        <p class="form-note" id="rfqNote">Prototipo funcional: todavía no transmite ni persiste la cotización.</p>
-      </form>
-    </section>
+    <section class="page-hero page-hero-premium"><div class="shell page-hero-grid"><div><span class="eyebrow">REQUEST FOR QUOTATION</span><h1>Una cotización técnica comparable necesita más que un precio.</h1><p>Esta interfaz organiza producto, especificación, cantidad, logística, plazo, impuestos y documentación para que distintas ofertas puedan analizarse sobre una base común.</p><div class="page-proof"><span>Technical fit</span><span>Commercial terms</span><span>Lead time</span><span>Logistics</span></div></div><aside class="page-note"><strong>Comparable offers</strong><p>El objetivo no es capturar un precio aislado: es entender qué incluye, bajo qué condiciones y con qué evidencia técnica.</p></aside></div></section>
+    <section class="section shell"><div class="section-heading"><span class="eyebrow">SUPPLIER RFQ</span><h2>Complete la oferta sobre una estructura comparable.</h2></div><form class="data-form" data-prototype-form data-note="rfqNote"><fieldset><legend>01 · Producto</legend><label>Producto<input name="product" required /></label><label>Aplicación<input name="application" /></label><label class="wide">Descripción<textarea name="description" rows="4"></textarea></label><label>Norma<input name="standard" /></label><label>Medidas / modelo<input name="dimensions" /></label><label>Cantidad<input name="quantity" required /></label><label>Unidad<input name="unit" required /></label></fieldset><fieldset><legend>02 · Entrega</legend><label class="wide">Lugar de entrega<input name="delivery_location" required /></label><label>Plazo requerido<input name="required_date" /></label><label>Tiempo de fabricación<input name="production_time" /></label><label>Stock disponible<input name="stock" /></label><label>Transporte<input name="transport" /></label></fieldset><fieldset><legend>03 · Oferta comercial</legend><label>Precio unitario<input name="unit_price" required /></label><label>Moneda<input name="currency" required /></label><label>Impuestos<input name="taxes" /></label><label>Condición de pago<input name="payment_terms" /></label><label>Validez de oferta<input name="validity" /></label><label>Incoterm / condición logística<input name="incoterm" /></label></fieldset><fieldset><legend>04 · Evidencia técnica</legend><label class="wide">Comentarios / excepciones<textarea name="comments" rows="4"></textarea></label><label class="wide">Documentación técnica<input type="file" name="documents" multiple accept=".pdf,.xlsx,.xls,.doc,.docx,.png,.jpg,.jpeg" /></label><p class="form-note wide">La carga persistente y el versionado del RFQ se habilitarán en la evolución V3. La pantalla ya fija las variables que deberán integrarse por API.</p></fieldset><div class="form-actions"><button class="button button-primary" type="submit">Preparar respuesta RFQ</button><a class="button button-ghost" href="suppliers.html">Registrar proveedor</a></div><p class="form-note" id="rfqNote">Prototipo funcional: todavía no transmite ni persiste la cotización.</p></form></section>
   </main>
-
-  <footer class="site-footer"><div class="shell footer-grid"><div><div class="brand brand-footer"><span class="brand-main">SENTRIVA</span><span class="brand-group">GROUP</span></div><p>Technical Intelligence · Strategic Sourcing · Market Research</p></div><div class="footer-meta"><span>Argentina</span><span>© <span id="year"></span> Sentriva Group</span></div></div></footer>
-  <script src="script-v050.js"></script>
-</body>
-</html>
+  <footer class="site-footer"><div class="shell footer-grid"><div><div class="brand brand-footer"><span class="brand-main">SENTRIVA</span><span class="brand-group">GROUP</span></div><p>Technical Intelligence · Strategic Sourcing · Market Research</p><div class="footer-links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="suppliers.html">Suppliers</a><a href="utility-poles.html">Utility Poles</a></div></div><div class="footer-meta"><span>Argentina</span><span>© <span id="year"></span> Sentriva Group</span></div></div></footer><script src="script-v050.js"></script>
+</body></html>
