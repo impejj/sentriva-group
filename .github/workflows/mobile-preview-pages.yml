@@ -1,0 +1,51 @@
+name: SENTRIVA Mobile Preview
+
+on:
+  push:
+    branches:
+      - feat/sentriva-v1-evolution
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sentriva-mobile-preview
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout preview branch
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Prepare non-indexed preview
+        shell: bash
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='_site' ./ _site/
+          touch _site/.nojekyll
+          printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          while IFS= read -r -d '' file; do
+            sed -i 's#</head>#  <meta name="robots" content="noindex,nofollow,noarchive" />\n</head>#' "$file"
+          done < <(find _site -type f -name '*.html' -print0)
+
+      - name: Upload preview artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy mobile preview
+        id: deployment
+        uses: actions/deploy-pages@v4
