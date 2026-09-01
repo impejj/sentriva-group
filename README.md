@@ -1,17 +1,20 @@
-# SENTRIVA GROUP — Website baseline
+# SENTRIVA GROUP — Institutional Site
 
 **Technical Intelligence · Strategic Sourcing · Market Research**
 
-Baseline reconstruida y gobernada a partir del brief aprobado de SENTRIVA GROUP.
+## Estado
 
-## Archivos
+- `main`: baseline original recibida el 2026-09-01.
+- `feat/sentriva-v1-evolution`: evolución V1 en curso.
+- Working product: institutional site + Research Intake + Supplier Registration + RFQ + first real research vertical.
 
-- `index.html`
-- `styles-v050.css`
-- `script-v050.js`
-- `404.html`
-- `robots.txt`
-- `sitemap.xml`
+## V1 routes
+
+- `/index.html` — Golden Home candidate.
+- `/research.html` — Request Research / structured research brief.
+- `/suppliers.html` — Supplier Registration.
+- `/rfq.html` — structured Request for Quotation.
+- `/utility-poles.html` — first real vertical: Infrastructure / Utility Poles.
 
 ## Posicionamiento
 
@@ -19,9 +22,24 @@ SENTRIVA GROUP se presenta como firma de inteligencia técnica, strategic sourci
 
 ## Regla de credibilidad
 
-No inventar clientes, proyectos, obras, facturación, empleados, oficinas, certificaciones, premios, testimonios, logos ni casos ficticios.
+No inventar clientes, proyectos, obras, facturación, empleados, oficinas, certificaciones, premios, testimonios, logos ni casos ficticios. La credibilidad debe provenir de metodología, evidencia, profundidad técnica y calidad de producto.
 
-## Próximas etapas
+## Formularios
+
+Los tres formularios actuales definen el contrato de datos y la UX V1. Deliberadamente no afirman persistencia, recepción de archivos ni lifecycle RFQ hasta implementar backend/API.
+
+## Sistema visual
+
+- `styles-v050.css` — sistema baseline.
+- `golden-v1.css` — capa Golden Home / premium B2B intelligence.
+
+Dirección: engineering + intelligence + data + global sourcing + premium consulting, evitando clichés de constructora y SaaS genérico.
+
+## Primera vertical real
+
+`Infrastructure / Utility Poles` demuestra la metodología mediante un marco de comparación de materiales, variables técnicas, normas, supply, condiciones comerciales y logística. Es un caso de la metodología, no el límite de SENTRIVA.
+
+## Evolución prevista
 
 V1 Institutional Website  
 V2 Supplier Database  
@@ -30,8 +48,10 @@ V4 Market Intelligence Portal
 V5 Supplier / Buyer Workspace  
 V6 Data & Intelligence Platform
 
-## Estado
+## Próximo slice productivo
 
-`baseline-reconstructed-2026-09-01`
-
-Esta baseline reproduce el canon funcional y visual disponible, pero no afirma equivalencia byte-a-byte con artefactos generados en sesiones previas cuyo código fuente ya no está disponible en el runtime actual.
+1. Founder visual/credibility review de Golden Home.
+2. Backend API + almacenamiento durable para Research/Supplier/RFQ.
+3. Proyección de datos reales del research Utility Poles.
+4. Primeras 3–5 piezas de Insights realmente útiles.
+5. ES/EN + SEO/analytics de producción.
