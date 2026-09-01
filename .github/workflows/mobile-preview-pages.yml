@@ -30,11 +30,19 @@ jobs:
         with:
           enablement: true
 
-      - name: Prepare non-indexed preview
+      - name: Prepare non-indexed public preview
         shell: bash
         run: |
           mkdir -p _site
-          rsync -a --exclude='.git' --exclude='.github' --exclude='_site' ./ _site/
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='_site' \
+            --exclude='.*' \
+            --exclude='README.md' \
+            --exclude='docs' \
+            --exclude='review.html' \
+            ./ _site/
           touch _site/.nojekyll
           printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
           while IFS= read -r -d '' file; do
