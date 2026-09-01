@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Solicite un research técnico, de mercado o abastecimiento a Sentriva Group." />
+  <meta name="theme-color" content="#0d1820" />
+  <title>Iniciar un research — Sentriva Group</title>
+  <link rel="stylesheet" href="styles-v050.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+  <header class="site-header"><div class="shell nav-wrap"><a class="brand" href="index.html" aria-label="Sentriva Group"><span class="brand-main">SENTRIVA</span><span class="brand-group">GROUP</span></a><button class="nav-toggle" aria-label="Abrir navegación" aria-expanded="false"><span></span><span></span></button><nav class="nav" aria-label="Principal"><a href="index.html#what">Qué hacemos</a><a href="index.html#industries">Sectores</a><a href="index.html#method">Metodología</a><a href="suppliers.html">Proveedores</a><a class="nav-cta" href="research.html" aria-current="page">Iniciar research</a></nav></div></header>
+
+  <main id="main">
+    <section class="page-hero shell">
+      <span class="eyebrow">REQUEST RESEARCH</span>
+      <h1>Convierta una pregunta compleja de mercado o abastecimiento en un brief investigable.</h1>
+      <p>Podemos estructurar investigaciones para localizar fabricantes, comparar tecnologías, relevar precios, mapear proveedores o entender un mercado técnico antes de una decisión de compra.</p>
+      <div class="page-proof"><span>Technical research</span><span>Supplier discovery</span><span>Benchmarking</span><span>Market mapping</span></div>
+    </section>
+
+    <section class="section section-dark"><div class="shell method-compact"><article><b>01</b><h3>Necesidad</h3><p>Qué decisión necesita tomar.</p></article><article><b>02</b><h3>Alcance</h3><p>Mercado, producto, geografía y restricciones.</p></article><article><b>03</b><h3>Evidencia</h3><p>Qué información debe ser verificable.</p></article><article><b>04</b><h3>Output</h3><p>Cómo necesita comparar y decidir.</p></article></div></section>
+
+    <section class="section shell">
+      <div class="section-heading"><span class="eyebrow">RESEARCH BRIEF</span><h2>Cuéntenos qué necesita entender.</h2></div>
+      <form class="data-form" data-prototype-form data-note="researchNote">
+        <fieldset><legend>01 · Contacto</legend>
+          <label>Empresa<input name="company" required /></label><label>Nombre y apellido<input name="contact_name" required /></label><label>Email<input type="email" name="email" required /></label><label>Teléfono<input name="phone" /></label>
+        </fieldset>
+        <fieldset><legend>02 · Problema</legend>
+          <label class="wide">¿Qué necesita investigar?<textarea name="research_question" rows="5" required placeholder="Ej.: identificar fabricantes y comparar alternativas técnicas y comerciales para..."></textarea></label>
+          <label>Sector<select name="industry"><option>Infrastructure</option><option>Energy</option><option>Mining</option><option>Industry</option><option>Construction</option><option>Telecommunications</option><option>Materials</option><option>Technology</option><option>Logistics</option><option>Otro</option></select></label>
+          <label>Geografía / mercados<input name="geography" /></label>
+          <label class="wide">Producto, tecnología o categoría<input name="product" /></label>
+        </fieldset>
+        <fieldset><legend>03 · Criterios</legend>
+          <label class="wide">Especificaciones / normas / requisitos<textarea name="requirements" rows="4"></textarea></label>
+          <label class="wide">Variables que quiere comparar<textarea name="comparison_variables" rows="4" placeholder="Precio, capacidad, norma, lead time, logística, vida útil, garantía..."></textarea></label>
+          <label>Plazo deseado<input name="deadline" /></label><label>Volumen / escala estimada<input name="volume" /></label>
+        </fieldset>
+        <fieldset><legend>04 · Output esperado</legend>
+          <label class="wide">¿Qué decisión debe poder tomar con el research?<textarea name="decision" rows="4"></textarea></label>
+          <label class="wide">Documentación de referencia<input type="file" name="documents" multiple accept=".pdf,.xlsx,.xls,.doc,.docx,.png,.jpg,.jpeg" /></label>
+          <p class="form-note wide">La recepción persistente de archivos se habilitará con el backend. Este formulario define ya el contrato de entrada del Research Intake.</p>
+        </fieldset>
+        <div class="form-actions"><button class="button button-primary" type="submit">Enviar brief de research</button><a class="button button-ghost" href="mailto:research@sentrivagroup.com">research@sentrivagroup.com</a></div>
+        <p class="form-note" id="researchNote">Prototipo funcional: todavía no persiste datos ni adjuntos.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><div class="brand brand-footer"><span class="brand-main">SENTRIVA</span><span class="brand-group">GROUP</span></div><p>Technical Intelligence · Strategic Sourcing · Market Research</p></div><div class="footer-meta"><span>Argentina</span><span>© <span id="year"></span> Sentriva Group</span></div></div></footer>
+  <script src="script-v050.js"></script>
+</body>
+</html>
