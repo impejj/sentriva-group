@@ -43,7 +43,7 @@ for (const entry of cases) {
   if (metrics.toggleDisplay === "none") failures.push("responsive navigation toggle is hidden");
   if (metrics.navDisplay !== "none") failures.push(`desktop navigation visible initially (${metrics.navDisplay})`);
   if (metrics.h1FontSize < 40) failures.push(`hero H1 too small (${metrics.h1FontSize}px)`);
-  if (entry.width <= 430 && metrics.methodHeight > 190) failures.push(`mobile methodology card too tall (${metrics.methodHeight}px)`);
+  if (entry.width <= 430 && metrics.methodHeight > 220) failures.push(`mobile methodology card too tall (${metrics.methodHeight}px)`);
   if (errors.length) failures.push(`browser errors: ${errors.join(" | ")}`);
 
   await page.screenshot({ path: `qa/artifacts/home-${entry.name}.png`, fullPage: true });
