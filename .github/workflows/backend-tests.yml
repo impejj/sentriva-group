@@ -6,10 +6,18 @@ on:
       - feat/sentriva-v1-evolution
     paths:
       - 'backend/**'
+      - 'script-v050.js'
+      - 'research.html'
+      - 'suppliers.html'
+      - 'rfq.html'
       - '.github/workflows/backend-tests.yml'
   pull_request:
     paths:
       - 'backend/**'
+      - 'script-v050.js'
+      - 'research.html'
+      - 'suppliers.html'
+      - 'rfq.html'
       - '.github/workflows/backend-tests.yml'
   workflow_dispatch:
 
@@ -33,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r backend/requirements-dev.txt
 
-      - name: Run tests
+      - name: Run backend + frontend submission contract tests
         env:
           PYTHONPATH: .
         run: pytest -q backend/tests
