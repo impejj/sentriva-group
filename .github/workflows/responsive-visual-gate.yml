@@ -1,23 +1,8 @@
 name: SENTRIVA Responsive Visual Gate
+# EXECUTION_POLICY: GitHub-hosted automatic execution suspended; explicit manual dispatch only.
 
 on:
-  pull_request:
-    paths:
-      - "*.html"
-      - "*.css"
-      - "*.js"
-      - "qa/**"
-      - ".github/workflows/responsive-visual-gate.yml"
-  push:
-    branches:
-      - feat/sentriva-v1-evolution
-    paths:
-      - "*.html"
-      - "*.css"
-      - "*.js"
-      - "qa/**"
-      - ".github/workflows/responsive-visual-gate.yml"
-
+  workflow_dispatch:
 permissions:
   contents: read
 
