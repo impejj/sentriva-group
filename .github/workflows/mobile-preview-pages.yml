@@ -1,9 +1,7 @@
 name: SENTRIVA Mobile Preview
+# EXECUTION_POLICY: GitHub-hosted automatic execution suspended; explicit manual dispatch only.
 
 on:
-  push:
-    branches:
-      - feat/sentriva-v1-evolution
   workflow_dispatch:
 
 permissions:
