@@ -1,24 +1,7 @@
 name: SENTRIVA Backend Tests
+# EXECUTION_POLICY: GitHub-hosted automatic execution suspended; explicit manual dispatch only.
 
 on:
-  push:
-    branches:
-      - feat/sentriva-v1-evolution
-    paths:
-      - 'backend/**'
-      - 'script-v050.js'
-      - 'research.html'
-      - 'suppliers.html'
-      - 'rfq.html'
-      - '.github/workflows/backend-tests.yml'
-  pull_request:
-    paths:
-      - 'backend/**'
-      - 'script-v050.js'
-      - 'research.html'
-      - 'suppliers.html'
-      - 'rfq.html'
-      - '.github/workflows/backend-tests.yml'
   workflow_dispatch:
 
 permissions:
